@@ -1,0 +1,691 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@400;600;700;800&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@400;600;700;800&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@400;600;700;800&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700;800&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700;800&family=Yantramanav:wght@300;400;500;700&family=Young+Serif&display=swap');
+
+
+
+
+*{
+    margin:0% ;
+    padding:0%;
+    font-family: 'Young Serif', serif;
+    box-sizing: border-box;
+}
+body{
+    height: 90%;
+    width: 100%;
+    background-color: rgb(2, 7, 37);
+    color: rgb(253, 253, 253);
+    position: relative;}
+a{
+    text-decoration: none;
+    padding: 5px;
+}
+a:hover{
+    background-color: rgb(235, 238, 49); 
+    color: aliceblue;
+}
+
+    .top{
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(102, 228, 102);
+        padding:10px;
+        padding-top: 25px;
+        border-radius: 15px;
+     height: 80px;
+    }
+    .top2 ul li{
+      list-style: none;
+      float: left;
+      margin-right: 40px;
+      font: normal normal 600 15px/35px open sans;
+      text-decoration: none;
+      position: relative;
+      
+      margin-bottom: 10px;
+      color:#FFFFFF;
+    }
+
+
+    .top2 ul li a{
+        font: normal normal 600 15px/35px open sans;
+text-decoration: none;
+position: relative;
+
+margin-bottom: 10px;
+color:rgb(2, 7, 37);
+
+    }
+
+    .top2 ul li a::after{
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        height: 2px;
+        width: 75%;
+        left: 0;
+        background-color: rgb(2, 7, 37);
+        margin-left: 3px;
+    }
+
+
+
+
+
+    .top1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+ 
+    .top1 img{
+        width: 70px;
+        height: 100px;
+        margin-left: 100px;
+    }
+  
+    .center{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 70px;
+    }
+.right img{
+border-radius:50px;
+}
+h1{
+    background-color: rgb(162, 93, 226);
+}
+span{
+    color:rgb(102, 228, 102);
+    font-size: x-large;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(102, 228, 102);
+    padding:10px;
+    padding-top: 25px;
+    border-radius: 15px;
+width:auto;
+height:200px;
+}
+.bottom{
+    display: flex;
+    justify-content:space-between;
+    padding: 10px;
+    align-items: center;
+}
+.left1{
+ font-size: xx-large;
+ margin-left: 30px;
+}
+.center p{
+    height: 200px;
+    width: 500px;
+}
+.right1 ul li{
+    display: flex;
+   margin-right: 60px;
+}
+#register{
+   margin-left: 600px;
+}
+button{
+    margin-left:50px;
+    background-color: rgb(102, 228, 102);
+ font-size: large;
+ }
+.table table-striped thead{
+    background-color: black;
+}
+.left1 a{
+    font-size: x-small;
+
+}
+.left a.hover{
+    background-color: rgb(222, 247, 0);
+}
+form h2{
+  text-transform:uppercase;
+
+}
+iframe{
+    height: 120px;
+    width: 150px;
+    }
+
+ thead{
+    color: blue;
+ }
+
+
+ /*...........................about me page start here.................*/
+
+ .aboutme{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(2, 7, 37);
+    display: flex;
+    flex-direction: row;
+ }
+
+ .aboutmeleft{
+    width: 45%;
+    height: 100%;
+    background-color: rgb(2, 7, 37);
+ }
+
+.aboutmeleft img{
+    width: 70%;
+    height: 100%;
+    margin-left: 190px;
+}
+
+
+
+ .aboutmeright{
+    width: 45%;
+    height: 100%;
+    background-color: rgb(2, 7, 37);
+    
+ }
+
+ .aboutmeright h3{
+    padding: 20px;
+ }
+
+ .aboutmeright p{
+  padding-left: 20px;
+  width: 70%;
+ }
+ .aboutmeright span{
+    padding-left: 10px;
+}
+ .left{
+    display: flex;
+    flex-direction: column;
+ }
+
+ 
+                /*story page button 4*/
+
+                
+                .storypagebutton4{
+          
+                    box-shadow: 10px 10px 50px #0000001A;
+                    border-radius: 100px;
+                    opacity: 1;
+                    width: 100px;
+         margin-top: 300px;
+           position: absolute;
+        
+                }
+        
+                .storypagebutton4 button{
+        width: 150px;
+        background: none;
+        color: #FFFFFF;
+        border-radius: 5px;
+        font: normal normal normal 15px/28px 'Yantramanav';
+        letter-spacing: 0.32px;
+       margin-left: 2px;
+        border: 1px solid#0000001A ;
+
+        height: 40px;
+        background: rgb(102, 228, 102);
+       
+                }
+
+              
+
+ 
+                /*story page button 5*/
+
+                
+                .storypagebutton5{
+          
+                    box-shadow: 10px 10px 50px #0000001A;
+                    border-radius: 100px;
+                    opacity: 1;
+                    width: 100px;
+         margin-top: 350px;
+           position: absolute;
+        margin-left: 25px;
+                }
+        
+                .storypagebutton5 button{
+        width: 100px;
+        background: none;
+        color: #FFFFFF;
+        border-radius: 5px;
+        font: normal normal normal 15px/28px 'Yantramanav';
+        letter-spacing: 0.32px;
+       margin-left: 2px;
+        border: 1px solid#0000001A ;
+
+        height: 30px;
+        background: rgb(102, 228, 102);
+       
+                }
+                
+
+                /*story page button 6*/
+
+                
+                .storypagebutton6{
+          
+                    box-shadow: 10px 10px 50px #0000001A;
+                    border-radius: 100px;
+                    opacity: 1;
+                    width: 100px;
+         margin-top: 20px;
+        
+        margin-left: 25px;
+                }
+        
+                .storypagebutton6 button{
+        width: 100px;
+        background: none;
+        color: #FFFFFF;
+        border-radius: 5px;
+        font: normal normal normal 15px/28px 'Yantramanav';
+        letter-spacing: 0.32px;
+       margin-left: 2px;
+        border: 1px solid#0000001A ;
+
+        height: 30px;
+        background: rgb(102, 228, 102);
+
+                    }
+      
+
+ /*...........................my services page start here.................*/
+
+.myservice h3{
+    text-align: center;
+padding-top: 30px;
+
+}
+
+.myservice span{
+    padding-right: 20px;
+}
+
+.myservice{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(2, 7, 37);
+} 
+
+
+.whychooseboxes{
+    width: 800px;
+    height: 220px;
+    background-color: rgb(2, 7, 37);
+    margin-left: 325px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+  }
+
+
+  /*...whychoose boxes1 details..*/
+
+  .whychooseboxes1{
+    width: 200px;
+    height: 100%;
+    box-shadow: -0px -0px 16px #FFFFFF;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+margin-right: 50px;
+
+
+  }
+
+  .whychooseboxes1image{
+    width:55px ;
+    height: 60px;
+    background-color: #FFFFFF;
+
+    margin-left: 75px;
+    margin-bottom: 10px;
+  }
+
+  .whychooseboxes1image img{
+    width:55px ;
+    height: 60px;}
+
+    .whychooseboxes1 h3{
+      text-align: center;
+      width: 100%;
+     padding-top: 10px;
+      font: normal normal 700 12px/10px 'Poppins';
+      letter-spacing: 0px;
+      color: #1D1D1D;
+      opacity: 1;
+    }
+
+    .whychooseboxes1 p{
+      text-align: center;
+   
+font: normal normal normal 10px/14px 'Poppins';
+letter-spacing: 0px;
+color: #7C7C7C;
+opacity: 1;
+    }
+
+       /*...whychoose boxes1 details..*/
+
+  .whychooseboxes2{
+    width: 200px;
+    height: 100%;
+    box-shadow: -0px -0px 16px #FFFFFF;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+margin-right: 50px;
+
+
+  }
+
+  .whychooseboxes2image{
+    width:55px ;
+    height: 60px;
+    background-color: #ff6f6f;
+    margin-left: 75px;
+    margin-bottom: 10px;
+  }
+
+  .whychooseboxes2image img{
+    width:60px ;
+    height: 60px;}
+
+
+    
+    .whychooseboxes2 h3{
+      text-align: center;
+      width: 100%;
+     padding-top: 10px;
+      font: normal normal 600 12px/10px 'Poppins';
+      letter-spacing: 0px;
+      color: #1D1D1D;
+      opacity: 1;
+    }
+
+    .whychooseboxes2 p{
+      text-align: center;
+    
+font: normal normal normal 10px/14px 'Poppins';
+letter-spacing: 0px;
+color: #7C7C7C;
+opacity: 1;
+    }
+
+
+    
+                /*story page button 7*/
+
+                
+                .storypagebutton7{
+          
+                    box-shadow: 10px 10px 50px #0000001A;
+                    border-radius: 100px;
+                    opacity: 1;
+                    width: 80px;
+                    margin-left: 60px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+                }
+        
+                .storypagebutton7 button{
+        width: 80px;
+        background: none;
+        color: #FFFFFF;
+        border-radius: 5px;
+        font: normal normal normal 11px/28px 'Yantramanav';
+      
+       margin-left: 2px;
+        border: 1px solid#0000001A ;
+
+        height: 25px;
+        background: rgb(102, 228, 102);
+
+                    }
+      
+
+
+    
+                /*story page button 8*/
+
+                
+                .storypagebutton8{
+          
+                    box-shadow: 10px 10px 50px #0000001A;
+                    border-radius: 100px;
+                    opacity: 1;
+                    width: 80px;
+                    margin-left: 60px;
+                    margin-top: 15px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+                }
+        
+                .storypagebutton8 button{
+        width: 80px;
+        background: none;
+        color: #FFFFFF;
+        border-radius: 5px;
+        font: normal normal normal 11px/28px 'Yantramanav';
+      
+       margin-left: 2px;
+        border: 1px solid#0000001A ;
+
+        height: 25px;
+        background: rgb(102, 228, 102);
+
+                    }
+      
+
+
+    
+                /*story page button 9*/
+
+                
+                .storypagebutton9{
+          
+                    box-shadow: 10px 10px 50px #0000001A;
+                    border-radius: 100px;
+                    opacity: 1;
+                    width: 80px;
+                    margin-left: 60px;
+                    margin-top: 29px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+                }
+        
+                .storypagebutton9 button{
+        width: 80px;
+        background: none;
+        color: #FFFFFF;
+        border-radius: 5px;
+        font: normal normal normal 11px/28px 'Yantramanav';
+      
+       margin-left: 2px;
+        border: 1px solid#0000001A ;
+
+        height: 25px;
+        background: rgb(102, 228, 102);
+
+                    }
+
+
+                    /*...........my projects start here...........*/
+
+                    .myprojects{
+                        width: 100%;
+                        height: 650px;
+                        background-color: rgb(2, 7, 37);
+                    }
+
+                    .myprojects h3{
+                        text-align: center;
+                        padding-top: 30px;
+                        padding-bottom: 30px;
+                    }
+
+                    .myprojects  span{
+                        padding-right: 20px;
+                    }
+
+                    .myprojectsimages{
+                        width: 90%;
+                        height: 600px;
+                        background-color: rgb(2, 7, 37);
+                      
+                        margin-left: 80px;
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                    }
+
+                    .myprojectsimages1{
+                        width: 250px;
+                        height: 250px;
+                        background-color: rgb(2, 7, 37);
+                        box-shadow: -0px -0px 16px #FFFFFF;
+                        margin-right: 50px;
+                        margin-bottom: 50px;
+                    }
+
+                    .myprojectsimages1 img{
+                        width: 250px;
+                        height: 250px;
+                   border-radius: 10px;
+                    }
+      
+      
+                    /*...........my contact start here...........*/
+
+                    .mycontact{
+                        width: 100%;
+                        height: 500px;
+                        background-color: rgb(2, 7, 37);
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    
+                    .mycontact h3{
+                        text-align: center;
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                    }
+
+                    .mycontact  span{
+                        padding-right: 20px;
+                    }
+
+
+                    .mycontactpage{
+                        width: 80%;
+                        height: 400px;
+                     
+                        display: flex;
+                        flex-direction: row;
+                    }
+
+                    .formcontent{
+                        width: 50%;
+                        height: 100%;
+                        background-color: #ff6f6f;
+                    }
+                    .formcontent h5{
+                        text-align: center;
+            padding-top: 100px;
+                    }
+                    .formcontent h6{
+                        text-align: center;
+            
+                    }
+                    .formcontent p{
+                        text-align: center;
+                     width: 90%;
+            padding-left: 80px;
+                    }
+
+
+                    .formbox{
+                        width: 50%;
+                        height: 100%;
+                        background-color: #6fb9ff;
+                    }
+
+                    .formlabel{
+                        display: flex;
+                        flex-direction: row;
+                        margin: 10px;
+                        margin-top: 100px;
+                    }
+                    .formlabel1{
+                        display: flex;
+                        flex-direction: row;
+                        margin: 10px;
+                        
+                    }
+
+                    textarea{
+                        margin-left: 12px;
+                    }
+
+                    button{
+                        margin-left: 160px;
+                        border: none;
+                       font-size: 0.8rem;
+                    }
+
+
+
+
+                    .footercenterimages{
+                        display: flex;
+                        flex-direction: row;
+                      width: 200px;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        height: 100px;
+                margin-left: 170px;
+                    }
+                  
+                    .footercenterimage1 img{
+                        width: 20px;
+                        height: 20px;
+
+                    }
+                  
+                    .footercenterimage2 img{
+                        width: 20px;
+                        height: 20px;
+                    }
+                  
+                    .footercenterimage3 img{
+                        width: 20px;
+                        height: 20px;
+                    }
+                  
+                    .footercenterimage4 img{
+                        width: 20px;
+                        height: 20px;
+                    }
+                  
