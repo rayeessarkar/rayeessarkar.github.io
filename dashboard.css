@@ -1,0 +1,1221 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+
+.mainboard{
+    width: 100vw;
+    height: 550px;
+
+    margin-right: 0px;
+  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+
+
+
+
+
+/*..................bar graph ...............*/
+
+/* Basic default for mobile table styling */
+/* You should further customize this in your own custom CSS file */
+
+/* Bar Graph color variables */
+:root {
+    --bar-color-1: #357EC7;
+    --bar-color-2: #E42217;
+    --bar-color-3: #4CC417;
+    --bar-color-4: #7D0541;
+    --bar-color-5: #FFD801;
+}
+
+[data-id="flexbox-bar-graph"] {
+    border-collapse: collapse;
+    margin: 4rem 0 6rem;
+    width: 100%;
+}
+[data-id="flexbox-bar-graph"] caption {
+    text-align: left;
+}
+[data-id="flexbox-bar-graph"] thead th {
+    text-align: right;
+}
+[data-id="flexbox-bar-graph"] thead th:nth-child(1),
+[data-id="flexbox-bar-graph"] tbody th {
+    text-align: left;
+}
+[data-id="flexbox-bar-graph"] tbody th {
+    font-weight: normal;
+    font-style: italic;
+}
+[data-id="flexbox-bar-graph"] tbody td {
+    text-align: right;
+}
+[data-id="flexbox-bar-graph"] tbody td p {
+    margin: 0;
+}
+
+/*********************************************************/
+/* Desktop graph styling */
+/*********************************************************/
+@media(min-width: 1200px) {
+    [data-id="flexbox-bar-graph"] {
+        background: transparent;
+        display: flex;
+        min-height: 400px;
+        padding: 0;
+        position: relative;
+        width: 100%;
+        justify-content: flex-start;
+
+    }
+
+    [data-id="flexbox-bar-graph"] caption {
+        display: block;
+        font-size: 2rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    [data-id="flexbox-bar-graph"] thead {
+        display: block;
+        margin: 2rem 0 3rem;
+        width: 100%;
+        margin-left: 120px;
+    }
+    [data-id="flexbox-bar-graph"] thead tr {
+        border-bottom: 1px solid lightgrey;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1rem;
+    }
+
+    [data-id="flexbox-bar-graph"] thead tr th {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        text-align: right;
+    }
+    [data-id="flexbox-bar-graph"] thead tr th:before {
+        content:'';
+        display: inline-block;
+        height: 10px;
+        margin: 0 0.5rem 0 2rem;
+        position: relative;
+        width: 10px;
+    }
+    [data-id="flexbox-bar-graph"] thead tr th:nth-child(1),
+    [data-id="flexbox-bar-graph"] thead tr th:nth-child(1):before {
+        display: none;
+    }
+/*...........................................................bar chart reduced from here........................*/
+    [data-id="flexbox-bar-graph"] tbody {
+        display: flex;
+        justify-content: space-between;
+        min-height: 300px;
+        width: 10%;
+    }
+/*..........................................................upto here....................................*/
+    [data-id="flexbox-bar-graph"] tbody tr {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        padding: 0 50px;
+        position: relative;
+        width: 100%;
+    }
+    [data-id="flexbox-bar-graph"] tbody tr th {
+        font-size: 90%;
+        position: absolute;
+        text-align: center;
+        margin-left: 30px;
+        top: 100%;
+        width: calc(100% - 100px);
+    }
+    [data-id="flexbox-bar-graph"] tbody tr td {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 95%;
+        justify-content: flex-end;
+    }
+
+    [data-id="flexbox-bar-graph"] tbody tr td span {
+        display: block;
+        height: calc(var(--data-set) * 100%);
+        width: 15px;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    [data-id="flexbox-bar-graph"] tbody tr td:nth-of-type(1) span,
+    [data-id="flexbox-bar-graph"] thead tr th:nth-child(2):before {
+        background: var(--bar-color-1);
+    }
+    [data-id="flexbox-bar-graph"] tbody tr td:nth-of-type(2) span,
+    [data-id="flexbox-bar-graph"] thead tr th:nth-child(3):before {
+        background: var(--bar-color-2);
+    }
+    [data-id="flexbox-bar-graph"] tbody tr td:nth-of-type(3) span,
+    [data-id="flexbox-bar-graph"] thead tr th:nth-child(4):before {
+        background: var(--bar-color-3);
+    }
+    [data-id="flexbox-bar-graph"] tbody tr td:nth-of-type(4) span,
+    [data-id="flexbox-bar-graph"] thead tr th:nth-child(5):before {
+        background: var(--bar-color-4);
+    }
+    [data-id="flexbox-bar-graph"] tbody tr td:nth-of-type(5) span,
+    [data-id="flexbox-bar-graph"] thead tr th:nth-child(6):before {
+        background: var(--bar-color-5);
+    }
+
+    [data-id="flexbox-bar-graph"] tbody tr td p {
+        font-size: 50%;
+        margin: 8px;
+        text-align: start;
+    }
+}
+
+
+.vertically {
+    transform: rotate(270deg);
+    position: absolute;
+    margin-top: 200px;
+}
+
+h1{
+    text-align: center;
+  padding: 20px;
+}
+
+.pictures b i{
+padding-left: 20px;
+}
+
+
+
+th img{
+width: 25px;
+height: 25px;
+margin-left: 10px;
+}
+
+canvas{
+    margin-left: 250px;
+    margin-top: 50px;
+}
+
+td a{
+    border: none;
+    text-decoration: none;
+}
+
+
+
+/*...........................................................sidebar content start here....................................*/
+
+.sidebar{
+    width: 187px;
+    margin-top: 30px;
+    height: 500px;
+    margin-left: 10px;
+    background-color: #7373c9;
+    display: flex;
+    flex-direction: column;
+}
+
+.username{
+    width: 100%;
+    height: 70px;
+    background-color: #4244af;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.circle{
+    width: 40px;
+    height:40px;
+margin: 10px;
+margin-left: 22px;
+    border-radius: 50%;
+    background-color: #4CBC49;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.circle img{
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+}
+
+.heading a{
+    border: none;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 700;
+    font: normal normal 600 18px/25px Segoe UI;
+
+}
+
+
+
+.dashboard{
+    width: 100%;
+    height: 55px;
+display: flex;
+flex-direction: row;
+padding-left: 10px;
+
+
+}
+
+
+.image{
+    margin: 0;
+    padding: 0;
+  padding-top: 5px;
+ }
+ .image img{
+     width: 20px;
+     height: 20px;
+   margin-right: 10px;
+ }
+ 
+ 
+ .heading4 {
+    border: none;
+    text-decoration: none;
+    color: white;
+  margin-top: 8px;
+}
+.heading4 a{
+    border: none;
+    text-decoration: none;
+   
+    padding-top: 5px;
+    padding-left: 3px;
+    text-decoration: none;
+    color: #364E61;
+    font-weight: 700;
+}
+
+
+.dashboard button{
+
+    width: 100%;
+    height:50px ;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border: none;
+    box-shadow: 0px 0px 0px 0px;
+    border-radius: 40px 0px 0px 40px;
+    padding-left: 40px;
+
+
+}
+
+
+/*........................................DASHBORD 2...........................................*/
+
+
+.dashboard2{
+    width: 90%;
+    height: 55px;
+display: flex;
+flex-direction: row;
+padding-left: 50px;
+
+}
+
+
+.image2{
+    margin: 0;
+    padding: 0;
+  padding-top: 5px;
+ }
+ .image2 img{
+     width: 20px;
+     height: 20px;
+   margin-right: 10px;
+ }
+ 
+ 
+ .heading2 {
+    border: none;
+    text-decoration: none;
+    color: white;
+  margin-top: 8px;
+}
+.heading2 a{
+    border: none;
+    text-decoration: none;
+   
+    padding-top: 5px;
+    padding-left: 3px;
+    text-decoration: none;
+    color: #364E61;
+    font-weight: 700;
+}
+
+.dashboard2{
+  margin: 0;
+  padding: 0;
+
+  margin-left: 10px;
+}
+
+
+
+.dashboard2 button{
+
+    width: 100%;
+    height:50px ;
+    background-color: #7373c9;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border: none;
+    box-shadow: 0px 0px 0px 0px;
+    border-radius: 40px 0px 0px 40px;
+    padding-left: 40px;
+margin-left: 0px;
+
+}
+
+
+/*........................................DASHBORD 3...........................................*/
+
+
+.dashboard3{
+    margin: 0;
+  padding: 0;
+
+  margin-left: 10px;
+
+}
+
+.image3{
+    margin: 0;
+    padding: 0;
+  padding-top: 5px;
+ }
+ .image3 img{
+     width: 20px;
+     height: 20px;
+   margin-right: 10px;
+ }
+ 
+ 
+ .heading3 {
+    border: none;
+    text-decoration: none;
+    color: white;
+  margin-top: 8px;
+}
+.heading3 a{
+    border: none;
+    text-decoration: none;
+   
+    padding-top: 5px;
+    padding-left: 3px;
+    text-decoration: none;
+    color: #364E61;
+    font-weight: 700;
+}
+
+
+
+
+.dashboard3 button{
+
+    width: 100%;
+    height:50px ;
+    background-color: #7373c9;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border: none;
+    box-shadow: 0px 0px 0px 0px;
+    border-radius: 40px 0px 0px 40px;
+    padding-left: 40px;
+
+}
+/*...................................................................side bar content closed............................................
+
+/*......................................dashboard boxes area....................................*/
+
+
+.leftboard{
+    width: 800px;
+    height: 450px;
+    background-color: #FFFFFF;
+    margin: 20px;
+  
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    }
+    
+    .leftboardheading h1{
+    text-align: center;
+ margin: 0;
+ padding: 0;
+ margin-bottom: 10px;
+    color: #4CBC49;
+    }
+    
+    .firstrow{
+        width: 100%;
+        height: 100px;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+    }
+    
+    
+    .network{
+        height: 100px;
+        width: 120px;
+      
+        margin-left: 10px;
+        border-radius: 50%;
+        background-color: #4CBC49;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+    }
+    
+    .centerrow{
+        width: 100%;
+        height: 220px;
+        background-color: white;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+    .leftcolumn{
+        width:170px;
+        height: 100%;
+        background-color:white;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .centercolumn{
+        width: 550px;
+        height: 100%;
+        background-color: aqua;
+        margin-left: 0px;
+       border-radius: 10px;
+    }
+    
+    
+    .rightcolumn{
+        width: 300px;
+        height: 100%;
+        background-color: white;
+        display: flex;
+       flex-direction: column;
+    }
+    
+    
+    
+    
+    .network h4{
+        list-style: none;
+       
+        font: normal normal bold 13px/10px open sans;
+        font-family: 'Open Sans';
+    letter-spacing: 0px;
+    color: black;
+    opacity: 1;
+    text-align: center;
+    padding-top: 30px;
+    }
+    
+    
+    .network p{
+     text-align: center;
+        font: normal normal normal 15px/10px open sans;
+      padding-top: 10px;
+      
+    font-weight: 600;
+    }
+    
+    .centercolumn h4{
+        list-style: none;
+       
+        font: normal normal bold 13px/10px open sans;
+        font-family: 'Open Sans';
+    letter-spacing: 0px;
+    color: black;
+    opacity: 1;
+    padding-top: 30px;
+    text-align: center;
+    
+       padding-bottom: 10px;
+    }
+    
+    .centercolumn p{
+    
+    font: normal normal normal 13px/20px open sans;
+    font-weight: 600;
+    text-align: center;
+    
+    }
+    
+    .rightboard{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+    
+    .rightboard h2{
+        padding-top: 55px;
+        color: #fc2a62;
+        padding-bottom: 10px;
+    }
+    
+    .rightboard iframe{
+        width: 370px;
+        height: 360px;
+    }
+    
+    /*............geofence box...............*/
+    
+    .geofence{
+        width: 170px;
+        height: 100%;
+        margin-left: 10px;
+        background-color: #f5134f;
+      border-radius: 10px;
+    }
+    
+    .geofence h4{
+        list-style: none;
+       
+        font: normal normal bold 13px/10px open sans;
+        font-family: 'Open Sans';
+    letter-spacing: 0px;
+    color: black;
+    opacity: 1;
+    text-align: center;
+    padding-top: 30px;
+       
+    }
+    
+    .geofence p{
+    
+    padding-top: 10px;
+    font: normal normal normal 13px/10px open sans;
+    font-weight: 600;
+    text-align: center;
+    }
+    
+    
+    
+    /*............Immobilized  box...............*/
+    
+    .Immobilized {
+        width: 170px;
+        height: 100%;
+        margin-left: 10px;
+        background-color: #FCC478;
+      border-radius: 10px;
+    }
+    
+    .Immobilized h4{
+        list-style: none;
+       
+        font: normal normal bold 13px/10px open sans;
+        font-family: 'Open Sans';
+    letter-spacing: 0px;
+    color: black;
+    opacity: 1;
+    text-align: center;
+    padding-top: 30px;
+       
+    }
+    
+    .Immobilized  p{
+        text-align: center;
+    padding-top: 10px;
+    font: normal normal normal 13px/10px open sans;
+    font-weight: 600;
+    }
+    
+    
+    
+    /*............Maintanance box...............*/
+    
+    .Maintanance{
+        width: 170px;
+        height: 100%;
+        margin-left: 10px;
+        background-color: #a8d7fd;
+      border-radius: 10px;
+    }
+    
+    .Maintanance h4{
+        list-style: none;
+       
+        font: normal normal bold 13px/10px open sans;
+        font-family: 'Open Sans';
+    letter-spacing: 0px;
+    color: black;
+    opacity: 1;
+    text-align: center;
+    padding-top: 30px;
+       
+    }
+    
+    .Maintanance p{
+        text-align: center;
+    padding-top: 10px;
+    font: normal normal normal 13px/10px open sans;
+    font-weight: 600;
+    }
+    
+    
+    /*..............devices box ......................*/
+    .devices{
+        width: 160px;
+        height: 105px;
+        background-color: rgb(60, 255, 0);
+      margin-right: 20px;
+      border-radius: 10px;
+    }
+    
+    .devices h4{
+        font: normal normal bold 13px/10px open sans;
+        font-family: 'Open Sans';
+    letter-spacing: 0px;
+    color: black;
+    opacity: 1;
+    text-align: center;
+    padding-top: 30px;
+    }
+    .devices p{
+        text-align: center;
+        padding-top: 10px;
+        font: normal normal normal 13px/10px open sans;
+        font-weight: 600;
+    }
+    
+    
+    /*..............Offline box ......................*/
+    .Offline{
+        width: 160px;
+        height: 105px;
+        background-color: #74f7bc;
+      margin-right: 20px;
+      border-radius: 10px;
+    }
+    
+    .Offline h4{
+        font: normal normal bold 13px/10px open sans;
+        font-family: 'Open Sans';
+    letter-spacing: 0px;
+    color: black;
+    opacity: 1;
+    text-align: center;
+    padding-top: 30px;
+    }
+    .Offline p{
+        text-align: center;
+        padding-top: 10px;
+        font: normal normal normal 13px/10px open sans;
+        font-weight: 600;
+    }
+    
+    /*..............OverLoad ......................*/
+    
+    .OverLoad{
+        width: 160px;
+        height: 105px;
+        background-color: palegreen;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+    
+    .OverLoad h4{
+        list-style: none;
+       
+        font: normal normal bold 13px/10px open sans;
+        font-family: 'Open Sans';
+    letter-spacing: 0px;
+    color: black;
+    opacity: 1;
+    padding-top: 30px;
+    text-align: center;
+       
+    }
+    
+    .OverLoad p{
+    
+    font: normal normal normal 13px/0px open sans;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 0px;
+    }
+    
+    .OverLoad h4{
+        padding-bottom: 20px;
+        text-align: center;
+        font: normal normal bold 13px/10px open sans;
+    }
+    
+    
+    
+    /*..............NoLoad......................*/
+    
+    .NoLoad{
+        width: 160px;
+        height: 105px;
+        background-color: #FFE59E;
+        margin-left: 10px;
+     
+        border-radius: 10px;
+    }
+    
+    .NoLoad h4{
+        list-style: none;
+       
+        font: normal normal bold 13px/10px open sans;
+        font-family: 'Open Sans';
+    letter-spacing: 0px;
+    color: black;
+    opacity: 1;
+    padding-top: 30px;
+    text-align: center;
+    }
+    
+    .NoLoad p{
+    
+    font: normal normal normal 13px/0px open sans;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 0px;
+    }
+    
+    .NoLoad h4{
+        padding-bottom: 20px;
+        text-align: center;
+        font: normal normal bold 13px/10px open sans;
+    }
+    
+    
+    
+    /*..............UnderLoad ......................*/
+    
+    .UnderLoad{
+        width: 160px;
+        height: 105px;
+        background-color: #EE6060;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+    
+    .UnderLoad h4{
+        list-style: none;
+       
+        font: normal normal bold 13px/10px open sans;
+        font-family: 'Open Sans';
+    letter-spacing: 0px;
+    color: black;
+    opacity: 1;
+    padding-top: 30px;
+    text-align: center;
+    }
+    
+    .UnderLoad p{
+    
+    font: normal normal normal 13px/0px open sans;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 0px;
+    }
+    
+    .UnderLoad h4{
+        padding-bottom: 20px;
+        text-align: center;
+        font: normal normal bold 13px/10px open sans;
+    }
+    
+    
+    
+    /*..............OnHigh ......................*/
+    
+    .OnHigh {
+        width: 160px;
+        height: 105px;
+        background-color: #EB8EAB;
+        margin-left: 10px;
+      
+        border-radius: 10px;
+    }
+    
+    .OnHigh h4{
+        list-style: none;
+       
+        font: normal normal bold 12px/10px open sans;
+        font-family: 'Open Sans';
+    letter-spacing: 0px;
+    color: black;
+    opacity: 1;
+    padding-top: 30px;
+    text-align: center;
+       
+    }
+    
+    .OnHigh p a{
+        text-decoration: none;
+        text-align: center;
+    }
+    
+    .OnHigh h4 a:hover{
+        background-color: #E42217;
+    }
+    
+    
+    
+    .OnHigh  p{
+    
+    font: normal normal normal 13px/0px open sans;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 0px;
+    }
+    
+    .OnHigh h4{
+        padding-bottom: 20px;
+        text-align: center;
+        
+    }
+    
+    /*..............Yard ......................*/
+    .yard{
+        height: 100px;
+        width: 120px;
+        margin-left: 10px;
+        background-color: #8789f1;
+       border-radius: 10px;
+    }
+    
+    
+    .yard h4{
+        font: normal normal bold 13px/10px open sans;
+        font-family: 'Open Sans';
+    letter-spacing: 0px;
+    color: black;
+    opacity: 1;
+    text-align: center;
+    padding-top: 30px;
+    }
+    .yard p{
+        text-align: center;
+        padding-top: 10px;
+        font: normal normal normal 13px/10px open sans;
+        font-weight: 600;
+    }
+    
+    
+    /*.........DeviceStatus tart here.............*/
+    
+    .DeviceStatus{
+        width: 170px;
+        height: 100%;
+        margin-left: 10px;
+        background-color: #017EFC;
+      border-radius: 10px;
+    }
+    .DeviceStatus h4{
+        list-style: none;
+       
+        font: normal normal bold 13px/10px open sans;
+        font-family: 'Open Sans';
+    letter-spacing: 0px;
+    color: black;
+    opacity: 1;
+    
+    padding-top: 30px;
+    text-align: center;
+    }
+    
+    .DeviceStatus p{
+        text-align: center;
+    padding-top: 10px;
+    font: normal normal normal 13px/10px open sans;
+    font-weight: 600;
+    margin-bottom: 0px;
+    }
+    
+    /*.........OfflineUnits tart here.............*/
+    
+    .OfflineUnits{
+        width: 170px;
+        height: 100%;
+    margin-left: 10px;
+        background-color: #C0C0F1;
+      border-radius: 10px;
+    }
+    .OfflineUnits h4{
+        list-style: none;
+       
+        font: normal normal bold 13px/10px open sans;
+        font-family: 'Open Sans';
+    letter-spacing: 0px;
+    color: black;
+    opacity: 1;
+    
+    padding-top: 30px;
+    text-align: center;
+    }
+    
+    .OfflineUnits p{
+        text-align: center;
+    padding-top: 10px;
+    font: normal normal normal 13px/10px open sans;
+    font-weight: 600;
+    margin: 0px;
+    }
+    
+    .OfflineUnits h3{
+        font-weight: 600;
+         font: normal normal bold 13px/10px open sans;
+        font-family: 'Open Sans';
+    letter-spacing: 0px;
+    color: black;
+    opacity: 1;
+    
+    margin: 0px;
+    text-align: center;
+    }
+    
+    
+    
+    
+    /*.........DeviceStatus tart here.............*/
+    
+    .DeviceStatus{
+        width: 170px;
+        height: 100%;
+        margin-left: 10px;
+        background-color: #017EFC;
+      border-radius: 10px;
+    }
+    .DeviceStatus h4{
+        list-style: none;
+       
+        font: normal normal bold 13px/10px open sans;
+        font-family: 'Open Sans';
+    letter-spacing: 0px;
+    color: black;
+    opacity: 1;
+    padding-left: 20px;
+    padding-top: 30px;
+    text-align: center;
+    }
+    
+    .DeviceStatus p{
+        text-align: center;
+    padding-top: 10px;
+    font: normal normal normal 13px/10px open sans;
+    font-weight: 600;
+    }
+    
+    
+    /*............HighAC box...............*/
+    
+    .HighAC{
+        width: 170px;
+        height: 100%;
+        margin-left: 10px;
+        background-color: #fc2a62;
+      border-radius: 10px;
+    }
+    
+    .HighAC h4 {
+        list-style: none;
+       
+        font: normal normal bold 13px/10px open sans;
+        font-family: 'Open Sans';
+    letter-spacing: 0px;
+    color: black;
+    opacity: 1;
+    padding-left: 20px;
+    padding-top: 30px;
+    text-align: center;
+    }
+    .HighAC p a{
+        text-decoration: none;
+        text-align: center;
+    }
+    
+    .HighAC h4 a:hover{
+        background-color: #E42217;
+        text-align: center;
+    }
+    
+    .HighAC p{
+        text-align: center;
+    padding-top: 10px;
+    font: normal normal normal 13px/10px open sans;
+    font-weight: 600;
+    }
+    
+    
+    /*............Onlow box...............*/
+    
+    .OnLow{
+        width: 170px;
+        height: 100%;
+        margin-left: 10px;
+        background-color: #F8C138;
+      border-radius: 10px;
+    }
+    
+    .OnLow h4{
+        list-style: none;
+       
+        font: normal normal bold 13px/10px open sans;
+        font-family: 'Open Sans';
+    letter-spacing: 0px;
+    color: black;
+    opacity: 1;
+    padding-left: 20px;
+    padding-top: 30px;
+    text-align: center;
+    }
+    
+    .OnLow p{
+        text-align: center;
+    padding-top: 10px;
+    font: normal normal normal 13px/10px open sans;
+    font-weight: 600;
+    }
+    
+    
+    /*............fleet box...............*/
+    
+    .fleet{
+        width: 170px;
+        height: 100%;
+        margin-left: 10px;
+        background-color: #f79fb6;
+      border-radius: 10px;
+    }
+    
+    .fleet h4{
+        list-style: none;
+       font-weight: 800;
+       font: normal normal bold 13px/10px open sans;
+        font-family: 'Open Sans';
+    letter-spacing: 0px;
+    color: black;
+    opacity: 1;
+    padding-left: 20px;
+    padding-top: 30px;
+    text-align: center;
+    }
+    
+    .fleet p{
+        text-align: center;
+    padding-top: 10px;
+    font: normal normal normal 13px/10px open sans;
+    font-weight: 600;
+    }
+
+
+
+    /*.........................................table area.....................................*/
+
+    .oiltable{
+        width: 100%;
+        height: 12vh;
+        background-color: #4CBC49;
+        margin: 0;
+        padding: 0;
+    }
+
+    .graph{
+        width:82%;
+        height: 100%;
+       margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+       
+    }
+
+    table tbody tr th{
+        font: normal normal normal 13px/24px open sans;
+        text-align: center;
+        background-color: #357EC7;
+    }
+
+    th:first-child{
+        text-align: center;
+       
+    }
+    table tbody tr td{
+        font: normal normal normal 13px/24px open sans;
+        text-align: center;
+    }
+
+    .graph h1{
+        color: #4CC417;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 10px;
+        margin-top: 10px;
+
+    }
+
+    .bg-yellow th{
+        background-color: #4CC417 !important;
+
+        font: normal normal 600 15px/14px open sans;
+        width: 100%;
+    }
+    
+
+
+
+
+
+    
+    
+    

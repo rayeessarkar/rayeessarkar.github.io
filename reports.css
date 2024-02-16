@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+
+.mainboard{
+    width: 80vw;
+    height: 550px;
+
+    margin-right: 0px;
+  
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.graph{
+    width:70%;
+    height: 100%;
+   
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+
+
+
+/*..................bar graph ...............*/
+
+/* Basic default for mobile table styling */
+/* You should further customize this in your own custom CSS file */
+
+/* Bar Graph color variables */
+:root {
+    --bar-color-1: #357EC7;
+    --bar-color-2: #E42217;
+    --bar-color-3: #4CC417;
+    --bar-color-4: #7D0541;
+    --bar-color-5: #FFD801;
+}
+
+[data-id="flexbox-bar-graph"] {
+    border-collapse: collapse;
+    margin: 4rem 0 6rem;
+    width: 80%;
+}
+[data-id="flexbox-bar-graph"] caption {
+    text-align: left;
+}
+[data-id="flexbox-bar-graph"] thead th {
+    text-align: right;
+}
+[data-id="flexbox-bar-graph"] thead th:nth-child(1),
+[data-id="flexbox-bar-graph"] tbody th {
+    text-align: left;
+}
+[data-id="flexbox-bar-graph"] tbody th {
+    font-weight: normal;
+    font-style: italic;
+}
+[data-id="flexbox-bar-graph"] tbody td {
+    text-align: right;
+}
+[data-id="flexbox-bar-graph"] tbody td p {
+    margin: 0;
+}
+
+/*********************************************************/
+/* Desktop graph styling */
+/*********************************************************/
+@media(min-width: 1200px) {
+    [data-id="flexbox-bar-graph"] {
+        background: transparent;
+        display: flex;
+        min-height: 400px;
+        padding: 0;
+        position: relative;
+        width: 100%;
+        justify-content: flex-start;
+
+    }
+
+    [data-id="flexbox-bar-graph"] caption {
+        display: block;
+        font-size: 2rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    [data-id="flexbox-bar-graph"] thead {
+        display: block;
+        margin: 2rem 0 3rem;
+        width: 100%;
+        margin-left: 120px;
+    }
+    [data-id="flexbox-bar-graph"] thead tr {
+        border-bottom: 1px solid lightgrey;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1rem;
+    }
+
+    [data-id="flexbox-bar-graph"] thead tr th {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        text-align: right;
+    }
+    [data-id="flexbox-bar-graph"] thead tr th:before {
+        content:'';
+        display: inline-block;
+        height: 10px;
+        margin: 0 0.5rem 0 2rem;
+        position: relative;
+        width: 10px;
+    }
+    [data-id="flexbox-bar-graph"] thead tr th:nth-child(1),
+    [data-id="flexbox-bar-graph"] thead tr th:nth-child(1):before {
+        display: none;
+    }
+/*...........................................................bar chart reduced from here........................*/
+    [data-id="flexbox-bar-graph"] tbody {
+        display: flex;
+        justify-content: space-between;
+        min-height: 300px;
+        width: 10%;
+    }
+/*..........................................................upto here....................................*/
+    [data-id="flexbox-bar-graph"] tbody tr {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        padding: 0 50px;
+        position: relative;
+        width: 100%;
+    }
+    [data-id="flexbox-bar-graph"] tbody tr th {
+        font-size: 90%;
+        position: absolute;
+        text-align: center;
+        margin-left: 30px;
+        top: 100%;
+        width: calc(100% - 100px);
+    }
+    [data-id="flexbox-bar-graph"] tbody tr td {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 95%;
+        justify-content: flex-end;
+    }
+
+    [data-id="flexbox-bar-graph"] tbody tr td span {
+        display: block;
+        height: calc(var(--data-set) * 100%);
+        width: 15px;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    [data-id="flexbox-bar-graph"] tbody tr td:nth-of-type(1) span,
+    [data-id="flexbox-bar-graph"] thead tr th:nth-child(2):before {
+        background: var(--bar-color-1);
+    }
+    [data-id="flexbox-bar-graph"] tbody tr td:nth-of-type(2) span,
+    [data-id="flexbox-bar-graph"] thead tr th:nth-child(3):before {
+        background: var(--bar-color-2);
+    }
+    [data-id="flexbox-bar-graph"] tbody tr td:nth-of-type(3) span,
+    [data-id="flexbox-bar-graph"] thead tr th:nth-child(4):before {
+        background: var(--bar-color-3);
+    }
+    [data-id="flexbox-bar-graph"] tbody tr td:nth-of-type(4) span,
+    [data-id="flexbox-bar-graph"] thead tr th:nth-child(5):before {
+        background: var(--bar-color-4);
+    }
+    [data-id="flexbox-bar-graph"] tbody tr td:nth-of-type(5) span,
+    [data-id="flexbox-bar-graph"] thead tr th:nth-child(6):before {
+        background: var(--bar-color-5);
+    }
+
+    [data-id="flexbox-bar-graph"] tbody tr td p {
+        font-size: 50%;
+        margin: 8px;
+        text-align: start;
+    }
+}
+
+
+.vertically {
+    transform: rotate(270deg);
+    position: absolute;
+    margin-top: 200px;
+}
+
+h1{
+    text-align: center;
+  padding: 20px;
+}
+
+.pictures b i{
+padding-left: 20px;
+}
+
+
+
+th img{
+width: 25px;
+height: 25px;
+margin-left: 10px;
+}
+
+canvas{
+    margin-left: 250px;
+    margin-top: 50px;
+}
+
+td a{
+    border: none;
+    text-decoration: none;
+}
+
+
+/*...........................................................sidebar content start here....................................*/
+
+.sidebar{
+    width: 210px;
+    margin-top: 30px;
+    height: 500px;
+    margin-left: 10px;
+    background-color: #7373c9;
+    display: flex;
+    flex-direction: column;
+}
+
+.username{
+    width: 100%;
+    height: 70px;
+    background-color: #4244af;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.circle{
+    width: 40px;
+    height:40px;
+margin: 10px;
+margin-left: 22px;
+    border-radius: 50%;
+    background-color: #4CBC49;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.circle img{
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+}
+
+.heading a{
+    border: none;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 700;
+    font: normal normal 600 18px/25px Segoe UI;
+
+}
+
+
+
+.dashboard{
+    width: 100%;
+    height: 55px;
+display: flex;
+flex-direction: row;
+padding-left: 10px;
+
+
+}
+
+
+.image{
+    margin: 0;
+    padding: 0;
+  padding-top: 5px;
+ }
+ .image img{
+     width: 20px;
+     height: 20px;
+   margin-right: 10px;
+ }
+ 
+ 
+ .heading4 {
+    border: none;
+    text-decoration: none;
+    color: white;
+  margin-top: 8px;
+}
+.heading4 a{
+    border: none;
+    text-decoration: none;
+   
+    padding-top: 5px;
+    padding-left: 3px;
+    text-decoration: none;
+    color: #364E61;
+    font-weight: 700;
+}
+
+
+.dashboard button{
+
+    width: 100%;
+    height:50px ;
+    background-color: #7373c9;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border: none;
+    box-shadow: 0px 0px 0px 0px;
+    border-radius: 40px 0px 0px 40px;
+    padding-left: 40px;
+
+
+}
+
+
+/*........................................DASHBORD 2...........................................*/
+
+
+.dashboard2{
+    width: 100%;
+    height: 55px;
+display: flex;
+flex-direction: row;
+padding-left: 50px;
+
+}
+
+
+.image2{
+    margin: 0;
+    padding: 0;
+  padding-top: 5px;
+ }
+ .image2 img{
+     width: 20px;
+     height: 20px;
+   margin-right: 10px;
+ }
+ 
+ 
+ .heading2 {
+    border: none;
+    text-decoration: none;
+    color: white;
+  margin-top: 8px;
+}
+.heading2 a{
+    border: none;
+    text-decoration: none;
+   
+    padding-top: 5px;
+    padding-left: 3px;
+    text-decoration: none;
+    color: #364E61;
+    font-weight: 700;
+}
+
+.dashboard2{
+  margin: 0;
+  padding: 0;
+
+  margin-left: 10px;
+}
+
+
+
+.dashboard2 button{
+
+    width: 100%;
+    height:50px ;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border: none;
+    box-shadow: 0px 0px 0px 0px;
+    border-radius: 40px 0px 0px 40px;
+    padding-left: 40px;
+margin-left: 0px;
+
+}
+
+
+/*........................................DASHBORD 3...........................................*/
+
+
+.dashboard3{
+    margin: 0;
+  padding: 0;
+
+  margin-left: 10px;
+
+}
+
+.image3{
+    margin: 0;
+    padding: 0;
+  padding-top: 5px;
+ }
+ .image3 img{
+     width: 20px;
+     height: 20px;
+   margin-right: 10px;
+ }
+ 
+ 
+ .heading3 {
+    border: none;
+    text-decoration: none;
+    color: white;
+  margin-top: 8px;
+}
+.heading3 a{
+    border: none;
+    text-decoration: none;
+   
+    padding-top: 5px;
+    padding-left: 3px;
+    text-decoration: none;
+    color: #364E61;
+    font-weight: 700;
+}
+
+
+
+
+.dashboard3 button{
+
+    width: 100%;
+    height:50px ;
+    background-color: #7373c9;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border: none;
+    box-shadow: 0px 0px 0px 0px;
+    border-radius: 40px 0px 0px 40px;
+    padding-left: 40px;
+}
+
+
+
+    /*.........................................table area.....................................*/
+
+    .oiltable{
+        width: 80vw;
+        height: 75vh;
+   
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .graph{
+        width:80vw;
+        height: 90vh;
+       margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+  
+    }
+
+    table tbody tr th{
+        font: normal normal normal 13px/24px open sans;
+        text-align: center;
+        background-color: #357EC7;
+    }
+
+    th:first-child{
+        text-align: center;
+    }
+    table tbody tr td{
+        font: normal normal normal 13px/24px open sans;
+        text-align: center;
+    }
+
+    .graph h1{
+        color: #4CC417;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 10px;
+        margin-top: 10px;
+
+    }
+
+    .bg-yellow th{
+        background-color: #4CC417 !important;
+
+        font: normal normal 600 15px/14px open sans;
+      
+    }
+    
+
+
+
+
+
+    
+    
+    
